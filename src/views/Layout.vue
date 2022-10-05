@@ -3,6 +3,8 @@
   <AppNavbar></AppNavbar>
   <!-- 头部组件 -->
   <AppTopnav></AppTopnav>
+  <!-- 吸顶头部 -->
+  <AppHeaderSticky></AppHeaderSticky>
   <!-- 内容容器 -->
   <div class="app-body">
     <!-- 二级路由 -->
@@ -16,6 +18,7 @@
 import AppNavbar from '@/components/app-navbar.vue'
 import AppTopnav from '@/components/app-header.vue'
 import AppFooter from '@/components/app-footer.vue'
+import AppHeaderSticky from '@/components/app-header-sticky.vue'
 import { useStore } from 'vuex'
 
 export default {
@@ -23,7 +26,8 @@ export default {
   components: {
     AppNavbar,
     AppTopnav,
-    AppFooter
+    AppFooter,
+    AppHeaderSticky
   },
   // 获取下分类数据
   setup() {
